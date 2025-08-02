@@ -19,7 +19,7 @@ public class Note {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String tile;
+    private String title;
     @Column(columnDefinition = "TEXT")
     private String content;
     private LocalDateTime createdAt;
