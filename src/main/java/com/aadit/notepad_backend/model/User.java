@@ -25,6 +25,6 @@ public class User {
     @Column(nullable = false)
     private String password;
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
-    private List<String> notes;
+    private List<User> notes;
 
 }
