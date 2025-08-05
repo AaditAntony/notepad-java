@@ -24,4 +24,9 @@ public Optional<User> findByUsername(String username){
 public Optional<User>getUserById(Long id){
     return userRepository.findById(id);
 }
+
+    public boolean loginUser(String username, String password) {
+        Optional<User> optionalUser = userRepository.findByUsername(username);
+        return optionalUser.isPresent() && optionalUser.get().getPassword().equals(password);
+    }
 }
