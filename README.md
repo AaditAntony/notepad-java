@@ -45,6 +45,4 @@ src/
 │   ├── UserService.java
 │   └── NoteService.java
 
-code
-
 
